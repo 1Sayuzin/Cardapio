@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barraca da Família - Cardápio Online</title>
+    <link rel="icon" href="logomarcav2.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logomarcav2.png" alt="Barraca da Família">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bem-vindos à Barraca da Família</h1>
+                <p>Sabores autênticos da culinária nordestina com o carinho de sempre</p>
+                <a href="#menu" class="cta-button">Ver Cardápio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+
+            <!-- Menu Filter -->
+            <div class="menu-filter">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="escondidinho">Escondidinho</button>
+                <button class="filter-btn" data-category="tapiocas">Tapiocas</button>
+                <button class="filter-btn" data-category="pasteis">Pastéis</button>
+                <button class="filter-btn" data-category="hamburguer">Hambúrguer</button>
+                <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                <button class="filter-btn" data-category="outros">Outros</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar item do cardápio...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Escondidinho de Macaxeira -->
+                <div class="menu-category" data-category="escondidinho">
+                    <h3 class="category-title">Escondidinho de Macaxeira</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>001 - Charque / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com charque e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>002 - Charque / Catupiry</h4>
+                                <p>Delicioso escondidinho com charque e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>003 - Charque Mussarela</h4>
+                                <p>Delicioso escondidinho com charque e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>004 - Carne Moída / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com carne moída e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>005 - Carne Moída / Catupiry</h4>
+                                <p>Delicioso escondidinho com carne moída e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>006 - Carne Moída / Mussarela</h4>
+                                <p>Delicioso escondidinho com carne moída e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>007 - Frango / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com frango e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>008 - Frango / Catupiry</h4>
+                                <p>Delicioso escondidinho com frango e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>009 - Frango Mussarela</h4>
+                                <p>Delicioso escondidinho com frango e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>010 - Calabresa / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com calabresa e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>011 - Calabresa / Catupiry</h4>
+                                <p>Delicioso escondidinho com calabresa e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>012 - Calabresa / Mussarela</h4>
+                                <p>Delicioso escondidinho com calabresa e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>013 - Carne de Sol / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com carne de sol e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>014 - Carne de Sol / Catupiry</h4>
+                                <p>Delicioso escondidinho com carne de sol e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>015 - Carne de Sol / Mussarela</h4>
+                                <p>Delicioso escondidinho com carne de sol e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>016 - Queijo Coalho</h4>
+                                <p>Delicioso escondidinho de queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>017 - Queijo Coalho / Catupiry</h4>
+                                <p>Delicioso escondidinho com queijo coalho e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>018 - Três Queijos</h4>
+                                <p>Delicioso escondidinho com três tipos de queijo</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>019 - Atum / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com atum e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>020 - Atum / Catupiry</h4>
+                                <p>Delicioso escondidinho com atum e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>021 - Atum / Mussarela</h4>
+                                <p>Delicioso escondidinho com atum e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>025 - Camarão / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com camarão e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>026 - Camarão / Catupiry</h4>
+                                <p>Delicioso escondidinho com camarão e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>027 - Camarão / Mussarela</h4>
+                                <p>Delicioso escondidinho com camarão e mussarela</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>028 - Aratu / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com aratu e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>029 - Bacon / Queijo Coalho</h4>
+                                <p>Delicioso escondidinho com bacon e queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 18,00</span>
+                                <span class="size">M: R$ 36,00</span>
+                                <span class="size">G: R$ 54,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>030 - Mista (2 Sabores)</h4>
+                                <p>Escolha 2 sabores para criar seu escondidinho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>031 - Moda da Casa</h4>
+                                <p>Carne de Sol, milho, queijo coalho e catupiry</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>032 - Sertaneja</h4>
+                                <p>Charque e calabresa</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>033 - Balaio de Gato</h4>
+                                <p>Frango, Carne de Sol, Calabresa</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>034 - Tabareu</h4>
+                                <p>Charque, carne do sol, queijo coalho</p>
+                            </div>
+                            <div class="item-price">
+                                <span class="size">P: R$ 20,00</span>
+                                <span class="size">M: R$ 40,00</span>
+                                <span class="size">G: R$ 60,00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tapiocas -->
+                <div class="menu-category" data-category="tapiocas">
+                    <h3 class="category-title">Tapiocas Salgadas</h3>
+                    <div class="menu-items">
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>001 - Pura</h4>
+                                <p>Tapioca tradicional sem recheio</p>
+                            </div>
+                            <div class="item-price">R$ 10,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>002 - Manteiga</h4>
+                                <p>Tapioca simples com manteiga</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>003 - Queijo</h4>
+                                <p>Tapioca recheada com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>004 - Queijo com Catupiry</h4>
+                                <p>Tapioca recheada com queijo e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>005 - Queijo com Cheddar</h4>
+                                <p>Tapioca recheada com queijo e cheddar</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>006 - Queijo com Calabresa</h4>
+                                <p>Tapioca recheada com queijo e calabresa</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>007 - Queijo com Milho</h4>
+                                <p>Tapioca recheada com queijo e milho</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>008 - Queijo com Frango</h4>
+                                <p>Tapioca recheada com queijo e frango</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>009 - Queijo com Frango e Catupiry</h4>
+                                <p>Tapioca com queijo, frango e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>010 - Queijo com Presunto</h4>
+                                <p>Tapioca recheada com queijo e presunto</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>011 - Queijo com Presunto e Catupiry</h4>
+                                <p>Tapioca com queijo, presunto e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>012 - Queijo com Banana (Canela e Açúcar)</h4>
+                                <p>Tapioca doce com queijo, banana, canela e açúcar</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>013 - Queijo com Banana e Catupiry</h4>
+                                <p>Tapioca doce com queijo, banana e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>014 - Queijo com Atum</h4>
+                                <p>Tapioca recheada com queijo e atum</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>015 - Queijo com Atum e Catupiry</h4>
+                                <p>Tapioca com queijo, atum e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>016 - Queijo com Charque</h4>
+                                <p>Tapioca com queijo e charque</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>017 - Queijo com Charque e Catupiry</h4>
+                                <p>Tapioca com queijo, charque e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>018 - Queijo com Carne do Sol</h4>
+                                <p>Tapioca com queijo e carne do sol</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>019 - Queijo com Carne do Sol e Catupiry</h4>
+                                <p>Tapioca com queijo, carne do sol e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>020 - Queijo com Camarão</h4>
+                                <p>Tapioca com queijo e camarão</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>021 - Queijo com Molho de Pizza</h4>
+                                <p>Tapioca com queijo e molho de pizza</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>022 - Queijo com Molho de Pizza e Frango</h4>
+                                <p>Tapioca com queijo, molho de pizza e frango</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>023 - Queijo com Molho de Pizza e Charque</h4>
+                                <p>Tapioca com queijo, molho de pizza e charque</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>024 - Queijo com Molho de Pizza e Atum</h4>
+                                <p>Tapioca com queijo, molho de pizza e atum</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>025 - Queijo com Molho de Pizza e Carne</h4>
+                                <p>Tapioca com queijo, molho de pizza e carne</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>026 - Queijo com Molho de Pizza e Presunto</h4>
+                                <p>Tapioca com queijo, molho de pizza e presunto</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>027 - Queijo Cheddar com Frango</h4>
+                                <p>Tapioca recheada com queijo cheddar e frango</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>028 - Queijo com Bacon</h4>
+                                <p>Tapioca recheada com queijo e bacon</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>029 - Três Queijos</h4>
+                                <p>Tapioca com mussarela, queijo coalho e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>030 - Três Queijos com Milho</h4>
+                                <p>Tapioca com três queijos e milho</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>031 - Três Queijos com Banana</h4>
+                                <p>Tapioca com três queijos e banana</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>032 - Três Queijos com Charque</h4>
+                                <p>Tapioca com três queijos e charque</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>033 - Três Queijos com Atum</h4>
+                                <p>Tapioca com três queijos e atum</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>034 - Três Queijos com Carne do Sol</h4>
+                                <p>Tapioca com três queijos e carne do sol</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>035 - Três Queijos com Camarão</h4>
+                                <p>Tapioca com três queijos e camarão</p>
+                            </div>
+                            <div class="item-price">R$ 30,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>036 - Três Queijos com Molho de Pizza</h4>
+                                <p>Tapioca com três queijos e molho de pizza</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>037 - Mista com Atum</h4>
+                                <p>Tapioca mista recheada com atum</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>038 - Mista com Frango</h4>
+                                <p>Tapioca mista recheada com frango</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>039 - Banana Frita com Charque ou Frango e Queijo</h4>
+                                <p>Tapioca doce com banana frita, charque ou frango e queijo</p>
+                            </div>
+                            <div class="item-price">R$ 30,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>040 - Presunto com Catupiry</h4>
+                                <p>Tapioca recheada com presunto e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>041 - Atum com Catupiry</h4>
+                                <p>Tapioca recheada com atum e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>042 - Frango com Catupiry</h4>
+                                <p>Tapioca recheada com frango e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>043 - Charque com Catupiry</h4>
+                                <p>Tapioca recheada com charque e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>044 - Banana com Catupiry</h4>
+                                <p>Tapioca doce com banana e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>045 - Queijo com Frango, Catupiry e Azeitona</h4>
+                                <p>Tapioca recheada com queijo, frango, catupiry e azeitona</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                    </div>
+
+                    <h3 class="category-title">Tapiocas Doces</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>046 - Banana c/ Leite Condensado ou Goiabada</h4>
+                                <p>Tapioca doce com banana e leite condensado ou goiabada</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>047 - Banana com Chocolate</h4>
+                                <p>Tapioca doce com banana e chocolate</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>048 - Catupiry c/ Leite Condensado ou Goiabada</h4>
+                                <p>Tapioca doce com catupiry e leite condensado ou goiabada</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>049 - Catupiry com Chocolate</h4>
+                                <p>Tapioca doce com catupiry e chocolate</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>050 - Coco c/ Leite Condensado ou Goiabada</h4>
+                                <p>Tapioca doce com coco e leite condensado ou goiabada</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>051 - Coco com Queijo e Milho</h4>
+                                <p>Tapioca doce com coco, queijo e milho</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>052 - Coco com Queijo e Manteiga</h4>
+                                <p>Tapioca doce com coco, queijo e manteiga</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>053 - Coco com Queijo e Catupiry</h4>
+                                <p>Tapioca doce com coco, queijo e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>054 - Coco com Queijo e Brigadeiro</h4>
+                                <p>Tapioca doce com coco, queijo e brigadeiro</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>055 - Coco com Brigadeiro</h4>
+                                <p>Tapioca doce com coco e brigadeiro</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>056 - Coco com Catupiry</h4>
+                                <p>Tapioca doce com coco e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>057 - Coco com Catupiry e Milho</h4>
+                                <p>Tapioca doce com coco, catupiry e milho</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>058 - Coco com Manteiga</h4>
+                                <p>Tapioca doce com coco e manteiga</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>059 - Coco com Queijo e Banana</h4>
+                                <p>Tapioca doce com coco, queijo e banana</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>060 - Coco com Queijo e Doce</h4>
+                                <p>Tapioca doce com coco, queijo e doce</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>061 - Coco com Queijo e Frango</h4>
+                                <p>Tapioca doce com coco, queijo e frango</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>062 - Coco com Queijo e Charque</h4>
+                                <p>Tapioca doce com coco, queijo e charque</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>063 - Coco com Queijo e Atum</h4>
+                                <p>Tapioca doce com coco, queijo e atum</p>
+                            </div>
+                            <div class="item-price">R$ 25,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>064 - Queijo c/ Leite Condensado ou Goiabada</h4>
+                                <p>Tapioca doce com queijo e leite condensado ou goiabada</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>065 - Nutella com Morango</h4>
+                                <p>Tapioca doce com nutella e morango</p>
+                            </div>
+                            <div class="item-price">R$ 30,00</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Pastéis -->
+                <div class="menu-category" data-category="pasteis">
+                    <h3 class="category-title">Pastéis Salgados</h3>
+                    <div class="menu-items">
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>001 - Aratu</h4>
+                                <p>Pastel recheado com aratu</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>002 - Carne</h4>
+                                <p>Pastel tradicional de carne moída</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>003 - Carne com Catupiry</h4>
+                                <p>Pastel de carne moída com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>004 - Carne com Azeitona</h4>
+                                <p>Pastel de carne moída com azeitona</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>005 - Carne com Queijo</h4>
+                                <p>Pastel de carne moída com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>006 - Calabresa</h4>
+                                <p>Pastel recheado com calabresa</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>007 - Calabresa com Queijo</h4>
+                                <p>Pastel de calabresa com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>008 - Calabresa com Catupiry</h4>
+                                <p>Pastel de calabresa com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>009 - Camarão</h4>
+                                <p>Pastel recheado com camarão</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>010 - Camarão com Queijo</h4>
+                                <p>Pastel de camarão com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>011 - Camarão com Catupiry</h4>
+                                <p>Pastel de camarão com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>012 - Camarão com Azeitona</h4>
+                                <p>Pastel de camarão com azeitona</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>013 - Caranguejo</h4>
+                                <p>Pastel recheado com caranguejo</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>014 - Charque Simples</h4>
+                                <p>Pastel recheado com charque</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>015 - Charque com Queijo</h4>
+                                <p>Pastel de charque com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>016 - Charque com Catupiry</h4>
+                                <p>Pastel de charque com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>017 - Charque Acebolado</h4>
+                                <p>Pastel de charque acebolado</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>018 - Carne de Sol</h4>
+                                <p>Pastel recheado com carne de sol</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>019 - Carne de Sol com Catupiry</h4>
+                                <p>Pastel de carne de sol com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>020 - Carne de Sol com Queijo</h4>
+                                <p>Pastel de carne de sol com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>021 - Carne de Sol Acebolado</h4>
+                                <p>Pastel de carne de sol acebolado</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>022 - Frango</h4>
+                                <p>Pastel recheado com frango</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>023 - Frango com Catupiry</h4>
+                                <p>Pastel de frango com catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>024 - Frango c/ Milho Verde e Catupiry</h4>
+                                <p>Pastel de frango com milho verde e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>025 - Frango com Queijo</h4>
+                                <p>Pastel de frango com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>026 - Marguerita</h4>
+                                <p>Mussarela, tomate e manjericão</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>027 - Misto</h4>
+                                <p>Presunto e queijo mussarela</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>028 - Milho Verde com Queijo</h4>
+                                <p>Pastel de milho verde com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>029 - Palmito</h4>
+                                <p>Pastel recheado com palmito</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>030 - Palmito com Queijo</h4>
+                                <p>Pastel de palmito com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>031 - Pizza</h4>
+                                <p>Mussarela, presunto, orégano e tomate</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>032 - Queijo</h4>
+                                <p>Pastel tradicional de queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>033 - Queijo com Azeitona</h4>
+                                <p>Pastel de queijo com azeitona</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>034 - Três Queijos</h4>
+                                <p>Mussarela, queijo coalho e catupiry</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>035 - Três Queijos com Tomate Seco</h4>
+                                <p>Três queijos com tomate seco</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>036 - Boliviano</h4>
+                                <p>Carne, ovo, azeitona, uva passa branca e preta</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>037 - Vento</h4>
+                                <p>Pastel sem recheio</p>
+                            </div>
+                            <div class="item-price">R$ 4,00</div>
+                        </div>
+
+                    </div>
+
+                    <h3 class="category-title">Pastéis Doces</h3>
+                    <div class="menu-items">
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>038 - Banana com Queijo</h4>
+                                <p>Banana com queijo, açúcar e canela</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>039 - Chocolate</h4>
+                                <p>Pastel recheado com chocolate</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>040 - Chocolate com Queijo</h4>
+                                <p>Pastel de chocolate com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>041 - Chocolate com Banana</h4>
+                                <p>Pastel de chocolate com banana</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>042 - Doce de Leite</h4>
+                                <p>Pastel recheado com doce de leite</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>043 - Doce de Leite com Queijo</h4>
+                                <p>Pastel de doce de leite com queijo</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>044 - Romeu e Julieta</h4>
+                                <p>Queijo com goiabada</p>
+                            </div>
+                            <div class="item-price">R$ 13,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>045 - Nutella com Morango</h4>
+                                <p>Pastel de nutella com morango</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hambúrguer -->
+                <div class="menu-category" data-category="hamburguer">
+                    <h3 class="category-title">Hambúrgueres</h3>
+                    <div class="menu-items">
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>001 - Misto Quente</h4>
+                                <p>Pão, queijo, presunto, opcional: salada</p>
+                            </div>
+                            <div class="item-price">R$ 11,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>002 - Hamburguer</h4>
+                                <p>Pão, carne de hambúrguer, salada, ervilha, milho verde, opcional: salada</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>003 - X-Burguer</h4>
+                                <p>Pão, carne de hambúrguer, queijo, presunto, salada, ervilha, milho verde, opcional:
+                                    batata palha</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>004 - X-Eggs</h4>
+                                <p>Pão, carne de hambúrguer, ovo, queijo, presunto, salada, ervilha, milho verde,
+                                    opcional: batata palha</p>
+                            </div>
+                            <div class="item-price">R$ 16,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>005 - X-Frango</h4>
+                                <p>Pão, frango, queijo, presunto, salada, ervilha, milho verde, opcional: batata palha
+                                </p>
+                            </div>
+                            <div class="item-price">R$ 17,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>006 - X-Calabresa</h4>
+                                <p>Pão, calabresa, carne de hambúrguer, queijo, presunto, salada, ervilha, milho verde,
+                                    opcional: batata palha</p>
+                            </div>
+                            <div class="item-price">R$ 18,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>007 - X-Bacon</h4>
+                                <p>Pão, bacon, carne de hambúrguer, queijo, presunto, salada, ervilha, milho verde,
+                                    opcional: batata palha</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>008 - X-Filé</h4>
+                                <p>Pão, filé, queijo, presunto, salada, ervilha, milho verde, opcional: batata palha</p>
+                            </div>
+                            <div class="item-price">R$ 28,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>009 - X-Tudo</h4>
+                                <p>Contém todos os sabores de hambúrgueres</p>
+                            </div>
+                            <div class="item-price">R$ 35,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>010 - Adicionar Carne de Hambúrguer</h4>
+                                <p>Adicional de carne de hambúrguer</p>
+                            </div>
+                            <div class="item-price">R$ 4,00</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-category" data-category="bebidas">
+
+                    <h3 class="category-title">Bebidas</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Água de Coco</h4>
+                                <p>Água de coco natural gelada</p>
+                            </div>
+                            <div class="item-price">R$ 6,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Água Mineral (Garrafa)</h4>
+                                <p>Água mineral sem gás</p>
+                            </div>
+                            <div class="item-price">R$ 3,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Água com Gás</h4>
+                                <p>Água mineral gaseificada</p>
+                            </div>
+                            <div class="item-price">R$ 4,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Xícara de Leite</h4>
+                                <p>Leite quente ou frio</p>
+                            </div>
+                            <div class="item-price">R$ 3,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cerveja Lata</h4>
+                                <p>Cerveja gelada na lata</p>
+                            </div>
+                            <div class="item-price">R$ 6,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cerveja sem Álcool Longneck</h4>
+                                <p>Cerveja longneck sem álcool</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cerveja Longneck</h4>
+                                <p>Cerveja longneck tradicional</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Refrigerante (Lata)</h4>
+                                <p>Refrigerante 350ml</p>
+                            </div>
+                            <div class="item-price">R$ 6,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Refrigerante (1 litro)</h4>
+                                <p>Refrigerante garrafa de 1 litro</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>H2O</h4>
+                                <p>Bebida levemente gaseificada</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+                    </div>
+
+                    <h3 class="category-title">Caldos de Cana</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Caldo de Cana 300ml</h4>
+                                <p>Porção individual de caldo de cana</p>
+                            </div>
+                            <div class="item-price">R$ 4,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Caldo de Cana 400ml</h4>
+                                <p>Caldo de cana médio</p>
+                            </div>
+                            <div class="item-price">R$ 6,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Caldo de Cana 500ml</h4>
+                                <p>Caldo de cana grande</p>
+                            </div>
+                            <div class="item-price">R$ 8,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Caldo de Cana 1 litro</h4>
+                                <p>Jarra de 1 litro de caldo de cana</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+                    </div>
+
+                    <h3 class="category-title">Cafés</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Café Preto</h4>
+                                <p>Café tradicional</p>
+                            </div>
+                            <div class="item-price">R$ 3,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Café com Leite</h4>
+                                <p>Café cremoso com leite</p>
+                            </div>
+                            <div class="item-price">R$ 4,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Café com Chantilly</h4>
+                                <p>Café com cobertura de chantilly</p>
+                            </div>
+                            <div class="item-price">R$ 8,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Café Ice</h4>
+                                <p>Café gelado</p>
+                            </div>
+                            <div class="item-price">R$ 10,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Capuccino Simples</h4>
+                                <p>Capuccino clássico e cremoso</p>
+                            </div>
+                            <div class="item-price">R$ 10,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Mocha</h4>
+                                <p>Capuccino com chocolate</p>
+                            </div>
+                            <div class="item-price">R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Capuccino com Chantilly</h4>
+                                <p>Capuccino com cobertura de chantilly</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Capuccino Ice com Chantilly</h4>
+                                <p>Capuccino gelado com chantilly</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Achocolatado (Toddy/Leite)</h4>
+                                <p>Bebida de chocolate tradicional</p>
+                            </div>
+                            <div class="item-price">R$ 8,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Achocolatado com Chantilly</h4>
+                                <p>Achocolatado com cobertura de chantilly</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Mocha com Chantilly</h4>
+                                <p>Mocha com cobertura de chantilly</p>
+                            </div>
+                            <div class="item-price">R$ 15,00</div>
+                        </div>
+                    </div>
+
+                    <h3 class="category-title">Sucos</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Suco com Leite</h4>
+                                <p>Refrescante suco batido com leite</p>
+                            </div>
+                            <div class="item-price">R$ 8,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Laranja</h4>
+                                <p>Suco natural de laranja</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Abacaxi</h4>
+                                <p>Suco natural de abacaxi</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Açaí</h4>
+                                <p>Suco natural de açaí</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Acerola</h4>
+                                <p>Suco natural de acerola</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Ameixa</h4>
+                                <p>Suco natural de ameixa</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cacau</h4>
+                                <p>Suco natural de cacau</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cajá</h4>
+                                <p>Suco natural de cajá</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cajú</h4>
+                                <p>Suco natural de caju</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cupuaçu</h4>
+                                <p>Suco natural de cupuaçu</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Goiaba</h4>
+                                <p>Suco natural de goiaba</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Graviola</h4>
+                                <p>Suco natural de graviola</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Jenipapo</h4>
+                                <p>Suco natural de jenipapo</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Manga</h4>
+                                <p>Suco natural de manga</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Mangaba</h4>
+                                <p>Suco natural de mangaba</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Maracujá</h4>
+                                <p>Suco natural de maracujá</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Morango</h4>
+                                <p>Suco natural de morango</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Tamarindo</h4>
+                                <p>Suco natural de tamarindo</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Umbú</h4>
+                                <p>Suco natural de umbú</p>
+                            </div>
+                            <div class="item-price">R$ 7,00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outros -->
+                <div class="menu-category" data-category="outros">
+                    <h3 class="category-title">Pratos Especiais</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Macaxeira com Carne do Sol</h4>
+                                <p>Macaxeira acebolada com carne do sol</p>
+                            </div>
+                            <div class="item-price">R$ 27,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cuscuz com Charque e Queijo</h4>
+                                <p>Cuscuz recheado com charque e queijo</p>
+                            </div>
+                            <div class="item-price">R$ 22,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Pizza Brotinho</h4>
+                                <p>Pizza individual de diversos sabores</p>
+                            </div>
+                            <div class="item-price">A partir de R$ 12,00</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cachorro Quente</h4>
+                                <p>Com molho, salsicha, batata palha e queijo</p>
+                            </div>
+                            <div class="item-price">A partir de R$ 14,00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Faça seu Pedido</h3>
+                    <p>Entre em contato conosco pelo Instagram para fazer seu pedido ou tirar dúvidas sobre nosso
+                        cardápio.</p>
+
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://instagram.com/barracadafamilia_" target="_blank">@barracadafamilia_</a>
+                        </div>
+                    </div>
+
+                    <div class="payment-info">
+                        <h4>Formas de Pagamento</h4>
+                        <p><strong>PIX:</strong> sdenison552@gmail.com</p>
+                        <p>Aceitamos cartões de débito</p>
+                    </div>
+                </div>
+
+                <div class="contact-image">
+                    <div class="logo-large">
+                        <img src="logobarraca.jpeg" alt="Barraca da Família">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Barraca da Família</h3>
+                    <p>Sabores autênticos da culinária nordestina</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/barracadafamilia_" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barraca da Família. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
